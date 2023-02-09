@@ -1,3 +1,9 @@
 import { createContext } from "react";
 
-export const Context =  createContext({})
+import { AppState } from "../interfaces/interfaces";
+
+type State = {
+  state: AppState
+}
+
+export const Context =  createContext<State>({} as State )
